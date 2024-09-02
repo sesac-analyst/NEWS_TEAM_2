@@ -1,1 +1,1 @@
-# NewsRecommend_Team_2
+# NEWS_TEAM_2
