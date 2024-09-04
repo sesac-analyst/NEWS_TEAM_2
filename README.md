@@ -21,6 +21,8 @@ IT/과학 분야에서는 최신 기술 동향을 파악하는 것이 중요하�
 ### envs
 ---
 Python version = 3.10
+
+
 ![Python Icon](https://img.icons8.com/color/48/python--v1.png) ![Numpy Icon](https://img.icons8.com/color/48/numpy.png) ![JupyterNotebook Icon](https://img.icons8.com/fluency/48/jupyter.png) ![VSCode Icon](https://img.icons8.com/dusk/64/visual-studio.png) ![pandas Icon](https://img.icons8.com/color/48/pandas.png) ![slack Icon](https://img.icons8.com/doodle/48/slack-new.png) ![google_drive Icon](https://img.icons8.com/color/48/google-drive--v2.png) ![notion Icon](https://img.icons8.com/color/48/notion--v1.png) 
 	
 ## Github Convention
