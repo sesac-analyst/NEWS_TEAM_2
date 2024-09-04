@@ -62,7 +62,7 @@ git add .
 
 3. commit changes with appropriate commit message
 ```bash
-git commit -m '[#(issue_ID)] COMMIT_TYPE: COMMIT_SUMMARY ([related MR_ID)'
+git commit -m '[#(issue_ID)] COMMIT_TYPE: COMMIT_SUMMARY ([related MR_ID])'
 ```
 
 4. push the commit to local branch
