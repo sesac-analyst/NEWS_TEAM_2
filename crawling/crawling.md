@@ -24,12 +24,16 @@ base_url = f"https://news.naver.com/breakingnews/section/105/{section_id}?date={
 
 ### BeautifulSoup의 request를 사용해 html을 파서하여 title, content, author, update_date, publisher_id를 가져왔다
 article_response = requests.get(url)
+
         article_response.raise_for_status()
+        
         article_soup = BeautifulSoup(article_response.text, 'html.parser')
 
 ### 멀티스레딩을 이용해 각 URL에서 데이터를 크롤링
 with concurrent.futures.ThreadPoolExecutor(max_workers=100) as executor:
+
   for result in tqdm(executor.map(crawl_article, urls), desc=f'Processing articles on {date}, section {section_id}', total=len(urls), unit='article', dynamic_ncols=True, ascii=True):
+  
                 all_results.append(result)
 url을 크롤링하는데 대량의 데이터를 가져오기에 시간을 단축하기위해 멀티스레딩을 사용했다.
 time.sleep(0.3)
@@ -45,8 +49,11 @@ category_id = 'IT'
 
 ###  BeautifulSoup의 request로 html을 파싱
 def fetch_page_urls(date_str, page):
+
     url = f'https://news.daum.net/breakingnews/digital?page={page}&regDate={date_str}'
+    
     response = requests.get(url)
+    
 soup = BeautifulSoup(response.text, 'html.parser')
 
 네이버와 다음은 기사주제의 구조가 다르기에 살짝 다르게 코드를 구성했다 
@@ -55,4 +62,5 @@ soup = BeautifulSoup(response.text, 'html.parser')
 
 ### 다음 뉴스의 url도 멀티스레드로 가져온다
 with ThreadPoolExecutor(max_workers=10) as executor:
+
         futures = {executor.submit(fetch_article_data, url): url for url in urls}
