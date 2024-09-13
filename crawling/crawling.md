@@ -7,6 +7,7 @@ end_date = datetime.strptime
 
 ### 장르별 section_id 리스트 생성
 section_ids = ['731', '226', '227', '732', '283', '229', '228', '230']
+
 base_url = f"https://news.naver.com/breakingnews/section/105/{section_id}?date={date}"
 
 ### section_id 리스트 네임
