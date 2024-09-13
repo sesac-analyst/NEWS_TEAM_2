@@ -3,7 +3,7 @@
 
 ### 참가자:
 ---
-- **김도형, 이예림, 이종찬**
+- **김도형, 이예림, 이정은, 이종찬**
 
 ### 프로젝트 설명
 ---
@@ -62,7 +62,7 @@ git add .
 
 3. commit changes with appropriate commit message
 ```bash
-git commit -m '[#(issue_ID)] COMMIT_TYPE: COMMIT_SUMMARY ([related MR_ID)'
+git commit -m '[#(issue_ID)] COMMIT_TYPE: COMMIT_SUMMARY ([related MR_ID])'
 ```
 
 4. push the commit to local branch
