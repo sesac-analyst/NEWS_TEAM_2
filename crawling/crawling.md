@@ -43,7 +43,7 @@ category_id = 'IT'
 다음은 네이버와 달리 IT라는 하나의 id로 묶여있기에 it로 묶어주고 
 날짜의 범위는 네이버와 같다.
 
-###  BeautifulSoup의 request
+###  BeautifulSoup의 request로 html을 파싱
 def fetch_page_urls(date_str, page):
     url = f'https://news.daum.net/breakingnews/digital?page={page}&regDate={date_str}'
     response = requests.get(url)
