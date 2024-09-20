@@ -19,9 +19,9 @@
 - unique_key: 전체 키워드  중복 제거
 - count_title_content: merge_daum_naver에서 unique_key 카운드 
 - Frequency: unique_key와 count_title_content를 DataFrame(컬럼명:word, frequency) 저장
-  
-    
-      
+<br/>
+<br/> 
+<br/> 
 ## 🔔 일반 단어 분석
 ---
 ### 상위 5개 단어 빈도 분석
@@ -42,6 +42,9 @@
 <br/> 
 <br/> 
 <br/> 
+<br/> 
+<br/> 
+
 ## 🔎 최신 기술 동향 단어 분석
 ---
 
